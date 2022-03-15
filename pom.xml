@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cac.learn</groupId>
-	<artifactId>sfg-pet-clinic</artifactId>
+	<artifactId>pet-clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sfg-pet-clinic</name>
-	<description>SFG Pet Clinic</description>
+	<name>pet-clinic</name>
+	<description>SFG Pet Clinic Implementation</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
