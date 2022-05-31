@@ -1,4 +1,4 @@
 package com.cac.learn.petclinic.model;
 
-public class PetType {
+public class PetType extends BaseEntity {
 }

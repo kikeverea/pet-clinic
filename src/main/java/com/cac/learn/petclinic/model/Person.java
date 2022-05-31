@@ -1,12 +1,16 @@
 package com.cac.learn.petclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;
 
-    public String getFirstName(String firstName) {
+    public String getFirstName() {
         return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setFirstName(String firstName) {
@@ -15,9 +19,5 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 }
