@@ -4,9 +4,11 @@ package com.cac.labs.petclinic.services.map;
 import com.cac.labs.petclinic.model.Owner;
 import com.cac.labs.petclinic.services.OwnerService;
 import org.hibernate.cfg.NotYetImplementedException;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override

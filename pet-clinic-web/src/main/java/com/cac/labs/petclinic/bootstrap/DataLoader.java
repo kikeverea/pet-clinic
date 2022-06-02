@@ -1,14 +1,11 @@
 package com.cac.labs.petclinic.bootstrap;
 
-import com.cac.labs.petclinic.model.BaseEntity;
 import com.cac.labs.petclinic.model.Owner;
 import com.cac.labs.petclinic.model.Person;
 import com.cac.labs.petclinic.model.Vet;
 import com.cac.labs.petclinic.services.CrudService;
 import com.cac.labs.petclinic.services.OwnerService;
 import com.cac.labs.petclinic.services.VetService;
-import com.cac.labs.petclinic.services.map.OwnerServiceMap;
-import com.cac.labs.petclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,9 +15,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
