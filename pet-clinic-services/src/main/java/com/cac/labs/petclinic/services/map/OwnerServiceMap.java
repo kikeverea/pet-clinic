@@ -2,11 +2,12 @@ package com.cac.labs.petclinic.services.map;
 
 
 import com.cac.labs.petclinic.model.Owner;
-import com.cac.labs.petclinic.services.CrudService;
+import com.cac.labs.petclinic.services.OwnerService;
+import org.hibernate.cfg.NotYetImplementedException;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -31,5 +32,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements C
     @Override
     public void delete(Owner owner) {
         super.delete(owner);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        throw new NotYetImplementedException();
     }
 }
